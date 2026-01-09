@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>My Family Tree</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+  color: #6b8e23;
+}
+
+.tree {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+.person {
+  position: absolute;
+  width: 140px;
+  padding: 10px;
+  background: #dce9a5;
+  border: 4px solid #9bbd4a;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.person.dark {
+  background: #cbb28b;
+  border-color: #7a5a3a;
+}
+
+.person strong {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+
+<h1>My Family Tree</h1>
+
+<div class="tree">
+
+<!-- SVG GARIS -->
+<svg width="100%" height="100%" style="position:absolute; top:0; left:0;">
+  <!-- garis kakek-nenek ke ayah -->
+  <line x1="300" y1="180" x2="400" y2="260" stroke="#7a5a3a" stroke-width="6"/>
+  <line x1="500" y1="180" x2="400" y2="260" stroke="#7a5a3a" stroke-width="6"/>
+
+  <!-- garis kakek-nenek ke ibu -->
+  <line x1="700" y1="180" x2="600" y2="260" stroke="#7a5a3a" stroke-width="6"/>
+  <line x1="900" y1="180" x2="600" y2="260" stroke="#7a5a3a" stroke-width="6"/>
+
+  <!-- ayah & ibu ke saya -->
+  <line x1="400" y1="330" x2="500" y2="420" stroke="#7a5a3a" stroke-width="6"/>
+  <line x1="600" y1="330" x2="500" y2="420" stroke="#7a5a3a" stroke-width="6"/>
+
+  <!-- saya ke anak -->
+  <line x1="500" y1="500" x2="500" y2="600" stroke="#7a5a3a" stroke-width="6"/>
+</svg>
+
+<!-- KAKEK NENEK AYAH -->
+<div class="person" style="left:260px; top:120px;">
+  <strong>Kakek (Ayah)</strong>
+  1880 - 1950
+</div>
+
+<div class="person" style="left:460px; top:120px;">
+  <strong>Nenek (Ayah)</strong>
+  1880 - 1950
+</div>
+
+<!-- KAKEK NENEK IBU -->
+<div class="person" style="left:660px; top:120px;">
+  <strong>Kakek (Ibu)</strong>
+  1880 - 1950
+</div>
+
+<div class="person" style="left:860px; top:120px;">
+  <strong>Nenek (Ibu)</strong>
+  1880 - 1950
+</div>
+
+<!-- AYAH IBU -->
+<div class="person" style="left:360px; top:260px;">
+  <strong>Ayah</strong>
+  1910 - 1970
+</div>
+
+<div class="person" style="left:560px; top:260px;">
+  <strong>Ibu</strong>
+  1910 - 1970
+</div>
+
+<!-- SAYA -->
+<div class="person dark" style="left:460px; top:420px;">
+  <strong></strong>
+  Kakak
+</div>
+
+<!-- ANAK -->
+<div class="person dark" style="left:460px; top:600px;">
+  <strong>Pajar Zaelani</strong>
+  Saya-
+</div>
+
+</div>
+
+</body>
+</html>
